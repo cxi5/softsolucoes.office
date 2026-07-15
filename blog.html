@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Blog & Dicas Tech — Soft Soluções LDA</title>
+    
+    <link rel="icon" type="image/png" href="soft.jng">
+    
+    <meta name="description" content="Artigos e dicas técnicas sobre reparação de telemóveis, desbloqueio FRP, redes Wi-Fi e computadores em Angola. Escritos pelos especialistas da Soft Soluções LDA em Luanda.">
+    <meta name="keywords" content="desbloqueio FRP Luanda, reparação telemóvel Angola, Wi-Fi lento Angola, PC lento Luanda, dicas tech Angola, Soft Soluções blog">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Soft Soluções LDA">
+    <meta name="language" content="Portuguese">
+    <meta name="geo.region" content="AO-LUA">
+    <meta name="geo.placename" content="Luanda, Angola">
+    <meta name="theme-color" content="#3b82f6">
+    <link rel="canonical" href="https://www.softsolucoes.ao/blog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.softsolucoes.ao/blog.html">
+    <meta property="og:title" content="Blog Tech — Soft Soluções LDA | Angola">
+    <meta property="og:description" content="Dicas e artigos sobre reparação de telemóveis, redes Wi-Fi e computadores em Angola.">
+    <meta property="og:locale" content="pt_AO">
+    <meta property="og:site_name" content="Soft Soluções LDA">
+    <meta property="og:image" content="https://www.softsolucoes.ao/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog Tech — Soft Soluções LDA | Luanda, Angola">
+    <meta name="twitter:description" content="Dicas e artigos sobre reparação de telemóveis, redes Wi-Fi e computadores em Angola.">
+    <meta name="twitter:image" content="https://www.softsolucoes.ao/og-image.jpg">
+    <meta name="twitter:site" content="@softsolucoes">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog Tech — Soft Soluções LDA",
+      "url": "https://www.softsolucoes.ao/blog.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Soft Soluções LDA",
+        "url": "https://www.softsolucoes.ao"
+      }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root { --bg: #080d18; --bg2: #090f1d; --glass-bg: rgba(255,255,255,0.03); --glass-border: rgba(255,255,255,0.07); }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: #cbd5e1; overflow-x: hidden; word-spacing: normal; letter-spacing: normal; }
+        .glass { background: var(--glass-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid var(--glass-border); }
+        .gradient-text { background: linear-gradient(135deg, #60a5fa 0%, #2dd4bf 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+        .nav-link { font-size: 14px; font-weight: 500; color: #94a3b8; transition: color 0.2s; position: relative; }
+        .nav-link:hover { color: #f1f5f9; }
+        .nav-link.active { color: #60a5fa; }
+        .nav-link.active::after { content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, #3b82f6, #2dd4bf); border-radius: 9999px; }
+
+        #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1); }
+        #mobile-menu.open { max-height: 500px; }
+
+        .btn-primary { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; background: linear-gradient(135deg, #2563eb, #1d4ed8); border-radius: 12px; font-weight: 800; font-size: 14px; color: white; transition: all 0.3s ease; text-decoration: none; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 40px rgba(37,99,235,0.3); }
+
+        .btn-ghost { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 16px; font-weight: 700; font-size: 15px; color: #e2e8f0; transition: all 0.3s ease; text-decoration: none; }
+        .btn-ghost:hover { background: rgba(255,255,255,0.08); transform: translateY(-2px); }
+
+        .badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; border-radius: 9999px; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+
+        /* ARTIGO CARD */
+        .article-card { transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .article-card:hover { transform: translateY(-8px); border-color: rgba(59,130,246,0.3) !important; box-shadow: 0 20px 48px rgba(0,0,0,0.35); }
+
+        /* ARTIGO EXPANDIDO */
+        .article-body { display: none; }
+        .article-body.open { display: block; }
+        .article-body h3 { font-size: 18px; font-weight: 700; color: white; margin: 24px 0 10px; }
+        .article-body p  { font-size: 15px; color: #94a3b8; line-height: 1.8; margin-bottom: 14px; }
+        .article-body ul { list-style: none; padding: 0; margin-bottom: 16px; }
+        .article-body ul li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #94a3b8; margin-bottom: 10px; line-height: 1.6; }
+        .article-body ul li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #3b82f6; flex-shrink: 0; margin-top: 8px; }
+        .article-body .tip-box { background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.2); border-radius: 12px; padding: 16px 20px; margin: 20px 0; }
+        .article-body .tip-box p { color: #cbd5e1; margin: 0; }
+        .article-body .warning-box { background: rgba(245,158,11,0.07); border: 1px solid rgba(245,158,11,0.2); border-radius: 12px; padding: 16px 20px; margin: 20px 0; }
+        .article-body .warning-box p { color: #fbbf24; margin: 0; }
+        .step-num-inline { display: inline-flex; width: 24px; height: 24px; border-radius: 50%; background: rgba(59,130,246,0.2); color: #60a5fa; font-size: 11px; font-weight: 800; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 4px; }
+
+        .blog-tag { display: inline-block; padding: 3px 10px; border-radius: 99px; font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+        .read-time { font-size: 11px; color: #475569; }
+
+        /* REVEAL */
+        .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+
+        /* CHEVRON do artigo */
+        .art-chevron { transition: transform 0.3s ease; }
+        .art-chevron.open { transform: rotate(180deg); }
+
+        /* WA FLOAT */
+        #wa-float { position: fixed; bottom: 24px; right: 20px; z-index: 9999; display: flex; align-items: center; gap: 10px; background: #16a34a; color: white; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700; padding: 14px 20px; border-radius: 50px; box-shadow: 0 4px 24px rgba(22,163,74,0.45); text-decoration: none; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: float-in 0.6s 1s ease both; }
+        @keyframes float-in { from{opacity:0;transform:translateY(20px) scale(0.9)} to{opacity:1;transform:translateY(0) scale(1)} }
+        #wa-float:hover { background: #15803d; transform: translateY(-3px) scale(1.03); }
+        #wa-float::before { content: ''; position: absolute; inset: 0; border-radius: 50px; border: 2px solid rgba(34,197,94,0.5); animation: wa-ring 2.5s ease-out infinite; }
+        @keyframes wa-ring { 0%{transform:scale(1);opacity:0.8} 100%{transform:scale(1.35);opacity:0} }
+        @media (max-width: 480px) { #wa-float { padding: 14px; border-radius: 50%; } #wa-float .wa-text { display: none; } #wa-float::before { border-radius: 50%; } }
+
+        .footer-link { color: #64748b; font-size: 13px; transition: color 0.2s; }
+        .footer-link:hover { color: #94a3b8; }
+        .social-btn { width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; transition: all 0.25s ease; color: #64748b; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); }
+        .social-btn:hover { background: rgba(255,255,255,0.08); color: white; transform: translateY(-2px); }
+
+        /* Imagem do artigo */
+        .article-hero-img { width: 100%; height: 220px; object-fit: cover; filter: brightness(0.7) saturate(0.8); transition: filter 0.4s ease; border-radius: 12px; }
+        .article-card:hover .article-hero-img { filter: brightness(0.85) saturate(1); }
+    </style>
+</head>
+<body>
+
+<a href="https://wa.me/244972445045" id="wa-float" target="_blank" rel="noopener" aria-label="Contactar via WhatsApp">
+    <i class="fa-brands fa-whatsapp" style="font-size:20px;"></i>
+    <span class="wa-text">Falar Agora</span>
+</a>
+
+<!-- NAV -->
+<nav class="fixed w-full z-50 glass top-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 bg-blue-600 rounded-xl flex items-center justify-center font-black text-white text-xl shadow-lg shadow-blue-600/30 transition group-hover:shadow-blue-600/50">S</div>
+                <span class="text-xl font-extrabold tracking-tighter text-white">SOFT <span class="text-blue-400">SOLUÇÕES</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-7">
+                <a href="index.html"    class="nav-link">Início</a>
+                <a href="servicos.html" class="nav-link">Serviços</a>
+                <a href="blog.html"     class="nav-link active">Blog</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+                <a href="https://wa.me/244972445045" class="btn-primary">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                </a>
+            </div>
+            <button id="mobile-btn" class="md:hidden text-slate-300 p-2 focus:outline-none">
+                <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu">
+            <div class="pb-5 space-y-1 border-t border-white/5 pt-4">
+                <a href="index.html"    class="block px-3 py-2.5 text-slate-400 hover:text-white font-medium transition rounded-lg hover:bg-white/5">Início</a>
+                <a href="servicos.html" class="block px-3 py-2.5 text-slate-400 hover:text-white font-medium transition rounded-lg hover:bg-white/5">Serviços</a>
+                <a href="blog.html"     class="block px-3 py-2.5 text-blue-400 font-semibold rounded-lg bg-blue-600/10">Blog</a>
+                <a href="contacto.html" class="block px-3 py-2.5 text-slate-400 hover:text-white font-medium transition rounded-lg hover:bg-white/5">Contacto</a>
+                <a href="https://wa.me/244972445045" class="flex items-center gap-2 mx-3 mt-3 bg-blue-600 hover:bg-blue-500 px-5 py-3 rounded-xl font-bold transition text-white justify-center">
+                    <i class="fa-brands fa-whatsapp"></i> Urgência no WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="relative pt-40 pb-16 overflow-hidden">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%, rgba(59,130,246,0.15) 0%, transparent 70%);pointer-events:none;"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <div class="reveal">
+            <span class="badge glass text-blue-400 border border-blue-600/20 mb-5">
+                <i class="fa-solid fa-newspaper text-blue-500 text-xs"></i> Blog & Dicas Tech
+            </span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-5 tracking-tight leading-[1.05] reveal" style="transition-delay:0.1s;">
+            Conhecimento que <span class="gradient-text">Protege</span><br>a sua Tecnologia
+        </h1>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed reveal" style="transition-delay:0.2s;">
+            Artigos práticos escritos pelos nossos especialistas para que resolvas, aprendas e nunca percas dados nem dinheiro.
+        </p>
+        <div class="mt-8 reveal" style="transition-delay:0.3s;">
+            <a href="index.html" class="btn-ghost" style="font-size:14px; padding:12px 26px; margin:auto; display:inline-flex;">
+                <i class="fa-solid fa-arrow-left text-sm"></i> Voltar ao Início
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ARTIGOS -->
+<section class="pb-32">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+        <!-- ─── ARTIGO 1 ─── -->
+        <article class="article-card glass rounded-3xl border border-white/5 overflow-hidden reveal" itemscope itemtype="https://schema.org/Article">
+            <meta itemprop="author" content="Soft Soluções LDA">
+            <meta itemprop="datePublished" content="2026-04-10">
+
+            <div class="overflow-hidden" style="position:relative;">
+                <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=800&q=80&auto=format&fit=crop"
+                     alt="Desbloqueio FRP Samsung Angola"
+                     class="article-hero-img"
+                     loading="lazy"
+                     itemprop="image">
+            </div>
+
+            <div class="p-8 md:p-10">
+                <div class="flex flex-wrap items-center gap-3 mb-5">
+                    <span class="blog-tag bg-blue-600/15 text-blue-400 border border-blue-600/20">Mobile · FRP</span>
+                    <span class="read-time"><i class="fa-solid fa-clock mr-1"></i>3 min de leitura</span>
+                    <span class="read-time"><i class="fa-solid fa-calendar mr-1"></i>Abr 2026</span>
+                </div>
+
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-4 leading-tight tracking-tight" itemprop="headline">
+                    Como Desbloquear FRP Samsung sem Perder Dados em Angola
+                </h2>
+                <p class="text-slate-400 leading-relaxed mb-6" itemprop="description">
+                    O bloqueio FRP (Factory Reset Protection) é uma medida de segurança do Google que aparece depois de um reset de fábrica. Neste guia, explicamos o que é, o que fazer e quando chamar um especialista.
+                </p>
+
+                <!-- Botão expandir -->
+                <button class="flex items-center gap-3 text-blue-400 font-bold text-sm hover:text-blue-300 transition" onclick="toggleArticle('art1', this)">
+                    <span>Ler artigo completo</span>
+                    <i class="fa-solid fa-chevron-down art-chevron text-xs"></i>
+                </button>
+
+                <!-- Corpo do artigo -->
+                <div class="article-body mt-8 border-t border-white/5 pt-8" id="art1">
+                    <h3>O que é o FRP e porque é que acontece?</h3>
+                    <p>O FRP (Factory Reset Protection) é um sistema de segurança desenvolvido pelo Google para Android que entra em ação após um reset de fábrica forçado. Quando o telefone é reiniciado sem desactivar a conta Google, o sistema exige a conta anterior antes de deixar entrar.</p>
+                    <p>Em Angola, isto acontece frequentemente quando se compra um telemóvel em segunda mão, quando se herda um dispositivo de um familiar, ou simplesmente quando se esquece de desactivar a conta antes de formatar.</p>
+
+                    <div class="warning-box">
+                        <p><strong>⚠️ Atenção:</strong> Não tentes métodos encontrados em vídeos aleatórios do YouTube. Muitos são desactualizados, instalam malware ou bloqueiam o aparelho permanentemente.</p>
+                    </div>
+
+                    <h3>O que podes fazer antes de chamar um especialista</h3>
+                    <ul>
+                        <li>Verifica se lembras do e-mail e senha da conta Google associada. Tenta fazer login directamente.</li>
+                        <li>Se esqueceste a senha, vai a <strong>accounts.google.com/signin/recovery</strong> e tenta recuperar pelo número de telemóvel.</li>
+                        <li>Se tens acesso ao número de telefone associado à conta, o Google pode enviar um código de verificação.</li>
+                        <li>Aguarda 72 horas — o Google tem um período de espera de segurança que, em alguns casos, resolve o bloqueio automaticamente.</li>
+                    </ul>
+
+                    <h3>Quando precisas de um especialista</h3>
+                    <p>Se não lembras o e-mail, se a conta foi criada por outra pessoa, ou se o aparelho pertencia a uma empresa, o desbloqueio exige ferramentas técnicas específicas como software de flash de firmware ou métodos de bypass por hardware — que apenas um especialista certificado deve executar para não danificar o aparelho.</p>
+
+                    <div class="tip-box">
+                        <p><strong>💡 Dica da Soft Soluções:</strong> A maioria dos casos de FRP em Luanda resolve-se em menos de 2 horas nas nossas mãos. Contacta-nos antes de tentares qualquer método por conta própria — o diagnóstico é sempre gratuito.</p>
+                    </div>
+
+                    <h3>Como evitar este problema no futuro</h3>
+                    <ul>
+                        <li>Antes de qualquer reset, vai a Definições → Contas → Google → Remove a conta.</li>
+                        <li>Desactiva o bloqueio de ecrã antes de formatar.</li>
+                        <li>Guarda sempre o e-mail e senha da conta Google num local seguro.</li>
+                        <li>Ao comprar telemóvel em segunda mão, exige que o vendedor remova a conta Google antes da venda.</li>
+                    </ul>
+
+                    <div class="mt-8 p-6 glass rounded-2xl border border-blue-600/20 flex flex-col sm:flex-row items-center gap-5">
+                        <div class="flex-1">
+                            <p class="font-bold text-white mb-1">Tens um Samsung bloqueado?</p>
+                            <p class="text-sm text-slate-400">Diagnóstico gratuito. Resolução em menos de 2 horas.</p>
+                        </div>
+                        <a href="https://wa.me/244972445045" class="btn-primary flex-shrink-0">
+                            <i class="fa-brands fa-whatsapp"></i> Resolver Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- ─── ARTIGO 2 ─── -->
+        <article class="article-card glass rounded-3xl border border-white/5 overflow-hidden reveal reveal-delay-1" itemscope itemtype="https://schema.org/Article">
+            <meta itemprop="author" content="Soft Soluções LDA">
+            <meta itemprop="datePublished" content="2026-04-05">
+
+            <div class="overflow-hidden" style="position:relative;">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&auto=format&fit=crop"
+                     alt="Wi-Fi lento Angola como resolver"
+                     class="article-hero-img"
+                     loading="lazy"
+                     itemprop="image">
+            </div>
+
+            <div class="p-8 md:p-10">
+                <div class="flex flex-wrap items-center gap-3 mb-5">
+                    <span class="blog-tag bg-purple-600/15 text-purple-400 border border-purple-600/20">Redes · Wi-Fi</span>
+                    <span class="read-time"><i class="fa-solid fa-clock mr-1"></i>4 min de leitura</span>
+                    <span class="read-time"><i class="fa-solid fa-calendar mr-1"></i>Abr 2026</span>
+                </div>
+
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-4 leading-tight tracking-tight" itemprop="headline">
+                    Wi-Fi Lento em Casa? 5 Causas e Como Resolver Hoje
+                </h2>
+                <p class="text-slate-400 leading-relaxed mb-6" itemprop="description">
+                    A internet lenta é um dos problemas mais frustrantes no dia a dia. Mas na maioria dos casos, a causa não é o fornecedor de internet — é algo que podes resolver em casa.
+                </p>
+
+                <button class="flex items-center gap-3 text-purple-400 font-bold text-sm hover:text-purple-300 transition" onclick="toggleArticle('art2', this)">
+                    <span>Ler artigo completo</span>
+                    <i class="fa-solid fa-chevron-down art-chevron text-xs"></i>
+                </button>
+
+                <div class="article-body mt-8 border-t border-white/5 pt-8" id="art2">
+                    <h3>1. O router está no sítio errado</h3>
+                    <p>O router deve estar numa posição central da casa, elevado do chão e sem obstáculos. Paredes de betão, espelhos e aparelhos electrónicos (como micro-ondas) bloqueiam drasticamente o sinal Wi-Fi.</p>
+
+                    <h3>2. O canal Wi-Fi está congestionado</h3>
+                    <p>Em prédios com muitos vizinhos em Luanda, dezenas de routers competem pelo mesmo canal. Usa a aplicação "WiFi Analyzer" no telemóvel para ver qual canal tem menos congestionamento e muda nas definições do router.</p>
+
+                    <h3>3. O router nunca é reiniciado</h3>
+                    <p>Um router ligado há semanas sem reiniciar acumula erros de memória e degrada a performance. A solução mais simples: desliga da corrente 30 segundos, liga novamente.</p>
+
+                    <h3>4. Dispositivos a consumir largura de banda em background</h3>
+                    <p>Smart TVs a fazer download de actualizações, telemóveis a fazer backup automático para a nuvem e câmeras de segurança a enviar vídeo consomem toda a largura de banda disponível sem que percebas.</p>
+
+                    <div class="tip-box">
+                        <p><strong>💡 Solução rápida:</strong> No painel do router (geralmente em 192.168.1.1), verifica a lista de dispositivos conectados. Identifica e remove ou prioriza os que mais consomem.</p>
+                    </div>
+
+                    <h3>5. O equipamento está desactualizado ou com defeito</h3>
+                    <p>Um router com mais de 4-5 anos pode simplesmente não conseguir lidar com as velocidades e o número de dispositivos actuais. Se nenhuma das soluções acima resultar, é altura de considerar um upgrade.</p>
+
+                    <h3>Quando um sistema Mesh é a solução certa</h3>
+                    <p>Se o problema são "zonas mortas" em certas divisões da casa, um sistema Mesh (com 2 ou 3 nós distribuídos pela casa) é a solução mais eficaz. Ao contrário de um repetidor que cria uma rede separada e mais lenta, o Mesh mantém uma única rede de alta velocidade por toda a casa.</p>
+
+                    <div class="mt-8 p-6 glass rounded-2xl border border-purple-600/20 flex flex-col sm:flex-row items-center gap-5">
+                        <div class="flex-1">
+                            <p class="font-bold text-white mb-1">Precisas de uma rede estável em casa ou na empresa?</p>
+                            <p class="text-sm text-slate-400">Instalamos sistemas Mesh e configuramos redes seguras em Luanda.</p>
+                        </div>
+                        <a href="https://wa.me/244972445045" class="btn-primary flex-shrink-0" style="background:linear-gradient(135deg,#7c3aed,#6d28d9);">
+                            <i class="fa-brands fa-whatsapp"></i> Pedir Orçamento
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- ─── ARTIGO 3 ─── -->
+        <article class="article-card glass rounded-3xl border border-white/5 overflow-hidden reveal reveal-delay-2" itemscope itemtype="https://schema.org/Article">
+            <meta itemprop="author" content="Soft Soluções LDA">
+            <meta itemprop="datePublished" content="2026-03-28">
+
+            <div class="overflow-hidden" style="position:relative;">
+                <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?w=800&q=80&auto=format&fit=crop"
+                     alt="PC lento como resolver Luanda Angola"
+                     class="article-hero-img"
+                     loading="lazy"
+                     itemprop="image">
+            </div>
+
+            <div class="p-8 md:p-10">
+                <div class="flex flex-wrap items-center gap-3 mb-5">
+                    <span class="blog-tag bg-teal-600/15 text-teal-400 border border-teal-600/20">PC & Mac</span>
+                    <span class="read-time"><i class="fa-solid fa-clock mr-1"></i>5 min de leitura</span>
+                    <span class="read-time"><i class="fa-solid fa-calendar mr-1"></i>Mar 2026</span>
+                </div>
+
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-4 leading-tight tracking-tight" itemprop="headline">
+                    PC Lento? 7 Passos para Recuperar a Velocidade sem Formatar
+                </h2>
+                <p class="text-slate-400 leading-relaxed mb-6" itemprop="description">
+                    Antes de formatares e perderes todos os teus ficheiros, experimenta estes 7 passos que os nossos técnicos usam para devolver velocidade a qualquer computador.
+                </p>
+
+                <button class="flex items-center gap-3 text-teal-400 font-bold text-sm hover:text-teal-300 transition" onclick="toggleArticle('art3', this)">
+                    <span>Ler artigo completo</span>
+                    <i class="fa-solid fa-chevron-down art-chevron text-xs"></i>
+                </button>
+
+                <div class="article-body mt-8 border-t border-white/5 pt-8" id="art3">
+                    <h3>Passo 1 — Desactiva programas de arranque desnecessários</h3>
+                    <p>Muitos programas instalam-se no arranque do Windows sem pedires autorização. Abre o Gestor de Tarefas (Ctrl+Shift+Esc), vai ao separador "Arranque" e desactiva tudo o que não precisas ao iniciar o computador.</p>
+
+                    <h3>Passo 2 — Limpa os ficheiros temporários</h3>
+                    <p>Pressiona Windows+R, escreve <strong>%temp%</strong> e apaga tudo o que estiver dentro dessa pasta. Faz o mesmo pesquisando "Limpeza de Disco" no menu Iniciar.</p>
+
+                    <h3>Passo 3 — Verifica a utilização de disco</h3>
+                    <p>No Gestor de Tarefas, verifica se o disco está a 100% de utilização. Se sim, o problema pode ser o serviço Windows Update a correr em background, ou um disco rígido (HDD) com defeito. Um SSD é a actualização mais impactante que podes fazer num PC.</p>
+
+                    <div class="tip-box">
+                        <p><strong>💡 Dica:</strong> Substituir um HDD por um SSD é a melhoria mais rápida possível. O tempo de arranque passa de 2-3 minutos para menos de 15 segundos.</p>
+                    </div>
+
+                    <h3>Passo 4 — Actualiza os drivers</h3>
+                    <p>Drivers desactualizados, especialmente os da placa gráfica e chipset, causam lentidão e travamentos. Usa o "Gestor de Dispositivos" do Windows para verificar se há actualizações pendentes.</p>
+
+                    <h3>Passo 5 — Analisa vírus e malware</h3>
+                    <p>Um computador infetado com malware pode ter a CPU e a internet completamente saturadas sem que percebas. Usa o Windows Defender ou o Malwarebytes (versão gratuita) para uma análise completa.</p>
+
+                    <h3>Passo 6 — Ajusta as opções de energia</h3>
+                    <p>Vai a Painel de Controlo → Opções de Energia e selecciona "Alto Desempenho". O Windows por defeito usa o modo "Equilibrado" que limita a performance para poupar energia.</p>
+
+                    <h3>Passo 7 — Aumenta a memória RAM</h3>
+                    <p>Se o computador tem 4GB ou menos de RAM e abre muitas aplicações ao mesmo tempo, a lentidão é inevitável. Adicionar memória RAM é uma das actualizações mais baratas e eficazes.</p>
+
+                    <div class="warning-box">
+                        <p><strong>⚠️ Quando formatar é inevitável:</strong> Se depois destes passos o computador continuar lento, pode ser corrupção do sistema operativo, vírus avançado ou hardware com defeito. Nesse caso, uma formatação profissional com backup completo dos teus dados é o próximo passo.</p>
+                    </div>
+
+                    <div class="mt-8 p-6 glass rounded-2xl border border-teal-600/20 flex flex-col sm:flex-row items-center gap-5">
+                        <div class="flex-1">
+                            <p class="font-bold text-white mb-1">O PC ainda está lento depois destes passos?</p>
+                            <p class="text-sm text-slate-400">Diagnóstico gratuito e solução profissional. Presencial ou remoto.</p>
+                        </div>
+                        <a href="https://wa.me/244972445045" class="btn-primary flex-shrink-0" style="background:linear-gradient(135deg,#0f766e,#0d9488);">
+                            <i class="fa-brands fa-whatsapp"></i> Pedir Ajuda
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 bg-[#090f1d] border-t border-white/5">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-5 tracking-tight">Tens um problema que não está aqui?</h2>
+        <p class="text-slate-400 mb-8">Fala connosco directamente. Diagnóstico gratuito e resposta em 15 minutos.</p>
+        <a href="https://wa.me/244972445045" class="btn-primary" style="font-size:17px; padding:18px 40px; margin:auto;">
+            <i class="fa-brands fa-whatsapp text-xl"></i> Falar com um Especialista
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/5 bg-[#060b15] py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+            <a href="index.html" class="flex items-center gap-2.5 group">
+                <div class="w-9 h-9 bg-blue-600/20 rounded-lg border border-blue-500/20 flex items-center justify-center font-bold text-blue-400 text-sm group-hover:bg-blue-600/30 transition">S</div>
+                <span class="text-base font-bold text-white tracking-tighter">SOFT SOLUÇÕES LDA</span>
+            </a>
+            <div class="flex items-center gap-6">
+                <a href="index.html"    class="footer-link">Início</a>
+                <a href="servicos.html" class="footer-link">Serviços</a>
+                <a href="blog.html"     class="footer-link">Blog</a>
+                <a href="contacto.html" class="footer-link">Contacto</a>
+            </div>
+            <div class="flex gap-3">
+                <a href="https://www.facebook.com/profile.php?id=61567268482991" target="_blank" rel="noopener" class="social-btn hover:text-blue-400"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/softsolucoes.lda" target="_blank" rel="noopener" class="social-btn hover:text-pink-400"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/244972445045" target="_blank" rel="noopener" class="social-btn hover:text-green-400"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="border-t border-white/5 mt-8 pt-8 text-center">
+            <p class="text-slate-600 text-xs uppercase tracking-[3px] font-bold">© 2026 Soft Soluções LDA — Qualidade Técnica Acima de Tudo.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu
+    const btn  = document.getElementById('mobile-btn');
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('menu-icon');
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('open');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+    });
+
+    // Toggle artigo
+    function toggleArticle(id, btnEl) {
+        const body = document.getElementById(id);
+        const chevron = btnEl.querySelector('.art-chevron');
+        const span = btnEl.querySelector('span');
+        body.classList.toggle('open');
+        chevron.classList.toggle('open');
+        span.textContent = body.classList.contains('open') ? 'Fechar artigo' : 'Ler artigo completo';
+    }
+
+    // Scroll reveal
+    const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

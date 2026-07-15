@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços de Assistência Técnica — Soft Soluções LDA</title>
+    
+    <link rel="icon" type="image/png" href="soft.jpg">
+
+    <!-- ═══ SEO META TAGS ═══ -->
+    <meta name="description" content="Soft Soluções LDA oferece serviços de assistência técnica: desbloqueio de conta google, remoção de IMEI, recuperação de dados, instalação de câmeras CCTV, redes Wi-Fi, reparação de PC e laptop, criação de sites e cibersegurança.">
+    <meta name="keywords" content="assistência técnica, desbloqueio FRP Angola, remoção conta Google, desbloqueio IMEI Luanda, reparação Android iOS, câmeras CCTV Luanda, instalação CCTV Angola, redes Wi-Fi empresarial, reparação PC laptop Luanda, recuperação de dados Angola, criação de sites, cibersegurança, antenas parabólicas, manutenção informática, Soft Soluções LDA">
+    <meta name="author" content="Soft Soluções LDA">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Portuguese">
+    <meta name="geo.region" content="AO-LUA">
+    <meta name="geo.placename" content="Luanda, Angola">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Serviços de Elite — Soft Soluções LDA">
+    <meta property="og:description" content="Desbloqueio FRP, CCTV, redes Wi-Fi, reparação de PC, criação de sites e muito mais. Assistência técnica profissional.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://softsolucoes.wuaze.com/servicos.html">
+    <meta property="og:locale" content="pt_AO">
+    <meta property="og:site_name" content="Soft Soluções LDA">
+
+    <!-- Twitter/X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Serviços Técnicos — Soft Soluções LDA | Luanda">
+    <meta name="twitter:description" content="Assistência técnica de elite em Luanda: FRP, IMEI, CCTV, redes, PC, sites e cibersegurança.">
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Soft Soluções LDA",
+      "description": "Assistência técnica especializada em Luanda: desbloqueio FRP, IMEI, câmeras CCTV, redes Wi-Fi, reparação de PC, criação de sites e cibersegurança.",
+      "url": "https://softsolucoes.wuaze.com",
+      "telephone": "+244972445045",
+      "email": "softsolucoees@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Luanda",
+        "addressCountry": "AO"
+      },
+      "openingHours": "Mo-Sa 08:00-18:00",
+      "serviceArea": {"@type": "Country", "name": "Angola"},
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços Técnicos",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desbloqueio FRP e Conta Google"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desbloqueio de IMEI e Rede"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Reparação Android e iOS"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Instalação de Câmeras CCTV"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Configuração de Redes Wi-Fi"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Reparação de PC e Laptop"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Criação de Sites Profissionais"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cibersegurança e Auditoria"}}
+        ]
+      }
+    }
+    </script>
+
+    <link rel="canonical" href="https://softsolucoes.wuaze.com/servicos.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+            word-spacing: normal;
+            letter-spacing: normal;
+            overflow-x: hidden;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+        }
+        .glass-strong {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa, #2dd4bf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-card {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                        border-color 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(135deg, rgba(59,130,246,0.04) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+        }
+        .service-card:hover::before { opacity: 1; }
+        .service-card:hover { transform: translateY(-8px); }
+        .service-card.blue:hover   { border-color: rgba(59,130,246,0.4);  box-shadow: 0 24px 48px -12px rgba(59,130,246,0.15), 0 0 0 1px rgba(59,130,246,0.2); }
+        .service-card.teal:hover   { border-color: rgba(20,184,166,0.4);  box-shadow: 0 24px 48px -12px rgba(20,184,166,0.15), 0 0 0 1px rgba(20,184,166,0.2); }
+        .service-card.purple:hover { border-color: rgba(139,92,246,0.4);  box-shadow: 0 24px 48px -12px rgba(139,92,246,0.15), 0 0 0 1px rgba(139,92,246,0.2); }
+        .service-card.amber:hover  { border-color: rgba(245,158,11,0.4);  box-shadow: 0 24px 48px -12px rgba(245,158,11,0.15), 0 0 0 1px rgba(245,158,11,0.2); }
+        .service-card.rose:hover   { border-color: rgba(244,63,94,0.4);   box-shadow: 0 24px 48px -12px rgba(244,63,94,0.15),  0 0 0 1px rgba(244,63,94,0.2); }
+        .service-card.green:hover  { border-color: rgba(34,197,94,0.4);   box-shadow: 0 24px 48px -12px rgba(34,197,94,0.15),  0 0 0 1px rgba(34,197,94,0.2); }
+
+        .card-accent {
+            position: absolute; top: 0; left: 0; right: 0;
+            height: 2px; border-radius: 9999px 9999px 0 0;
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+        .service-card:hover .card-accent { opacity: 1; }
+        .card-accent.blue   { background: linear-gradient(90deg, transparent, #3b82f6, transparent); }
+        .card-accent.teal   { background: linear-gradient(90deg, transparent, #14b8a6, transparent); }
+        .card-accent.purple { background: linear-gradient(90deg, transparent, #8b5cf6, transparent); }
+        .card-accent.amber  { background: linear-gradient(90deg, transparent, #f59e0b, transparent); }
+        .card-accent.rose   { background: linear-gradient(90deg, transparent, #f43f5e, transparent); }
+        .card-accent.green  { background: linear-gradient(90deg, transparent, #22c55e, transparent); }
+
+        .icon-wrap { transition: transform 0.3s ease; }
+        .service-card:hover .icon-wrap { transform: scale(1.08) rotate(-3deg); }
+
+        .nav-active {
+            color: #60a5fa;
+            position: relative;
+        }
+        .nav-active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #2dd4bf);
+            border-radius: 9999px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 20px 44px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            border-radius: 16px;
+            font-weight: 800;
+            font-size: 18px;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 40px rgba(37, 99, 235, 0.25), 0 4px 16px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+        }
+        .cta-btn::before {
+            content: '';
+            position: absolute; top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+            transition: left 0.5s ease;
+        }
+        .cta-btn:hover::before { left: 100%; }
+        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 0 60px rgba(37, 99, 235, 0.35), 0 8px 24px rgba(0,0,0,0.4); }
+        .cta-btn .wa-icon { font-size: 24px; transition: transform 0.3s ease; }
+        .cta-btn:hover .wa-icon { transform: scale(1.15) rotate(8deg); }
+
+        .divider {
+            width: 48px; height: 3px;
+            background: linear-gradient(90deg, #3b82f6, #2dd4bf);
+            border-radius: 9999px;
+            margin: 0 auto 24px;
+        }
+
+        .card-number {
+            font-size: 11px; font-weight: 800;
+            letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.3;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .fade-up { animation: fadeUp 0.6s ease forwards; }
+        .delay-1 { animation-delay: 0.1s; opacity: 0; }
+        .delay-2 { animation-delay: 0.2s; opacity: 0; }
+        .delay-3 { animation-delay: 0.3s; opacity: 0; }
+        .delay-4 { animation-delay: 0.4s; opacity: 0; }
+        .delay-5 { animation-delay: 0.5s; opacity: 0; }
+        .delay-6 { animation-delay: 0.6s; opacity: 0; }
+        .delay-7 { animation-delay: 0.7s; opacity: 0; }
+
+        #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1); }
+        #mobile-menu.open { max-height: 400px; }
+
+        .bg-orb {
+            position: fixed; border-radius: 50%;
+            pointer-events: none; z-index: 0; filter: blur(120px);
+        }
+
+        /* Secção de categoria */
+        .category-title {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .category-line {
+            flex: 1; height: 1px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.08), transparent);
+        }
+    </style>
+</head>
+<body class="bg-[#080d18] text-slate-300 antialiased">
+
+    <!-- Orbs de fundo -->
+    <div class="bg-orb w-[700px] h-[700px] bg-blue-600/8 top-[-200px] left-1/2 -translate-x-1/2"></div>
+    <div class="bg-orb w-[400px] h-[400px] bg-teal-500/5 bottom-[10%] right-[-100px]"></div>
+
+    <!-- NAVEGAÇÃO -->
+    <nav class="fixed w-full z-50 glass top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-blue-600 rounded-xl flex items-center justify-center font-black text-white text-xl shadow-lg shadow-blue-600/30 group-hover:shadow-blue-600/50 transition">S</div>
+                    <span class="text-xl font-extrabold tracking-tighter text-white">SOFT <span class="text-blue-400">SOLUÇÕES</span></span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="text-slate-400 hover:text-white font-medium transition text-sm">Início</a>
+                    <a href="servicos.html" class="nav-active font-semibold text-sm">Serviços</a>
+                    <a href="contacto.html" class="text-slate-400 hover:text-white font-medium transition text-sm">Contacto</a>
+                    <a href="https://wa.me/244972445045" class="bg-blue-600 hover:bg-blue-500 px-6 py-2.5 rounded-xl font-bold transition shadow-lg shadow-blue-600/20 text-white text-sm flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+                <button id="mobile-btn" class="md:hidden text-slate-300 p-2 focus:outline-none">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu">
+                <div class="pb-5 space-y-1 border-t border-white/5 pt-4">
+                    <a href="index.html" class="block px-3 py-2.5 text-slate-400 hover:text-white font-medium transition rounded-lg hover:bg-white/5">Início</a>
+                    <a href="servicos.html" class="block px-3 py-2.5 text-blue-400 font-semibold rounded-lg bg-blue-600/10">Serviços</a>
+                    <a href="contacto.html" class="block px-3 py-2.5 text-slate-400 hover:text-white font-medium transition rounded-lg hover:bg-white/5">Contacto</a>
+                    <a href="https://wa.me/244972445045" class="flex items-center gap-2 mx-3 mt-3 bg-blue-600 hover:bg-blue-500 px-5 py-3 rounded-xl font-bold transition text-white justify-center">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Urgente
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="relative pt-40 pb-16 overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="fade-up delay-1">
+                <div class="divider"></div>
+                <span class="badge glass text-blue-400 border border-blue-600/20 mb-5">
+                    <i class="fa-solid fa-bolt text-blue-500"></i>
+                    Tecnologia Avançada & Segurança
+                </span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-[1.05] tracking-tighter fade-up delay-2">
+                Os Nossos Serviços<br>
+                <span class="gradient-text">de Elite.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed fade-up delay-3">
+                Da reparação de telemóveis à instalação de câmeras CCTV, passando por redes Wi-Fi e criação de sites. Soluções completas para particulares e empresas
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="pb-32 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- ── CATEGORIA 1: MOBILE & SOFTWARE ── -->
+            <div class="category-title fade-up delay-2">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-blue-600/20 border border-blue-600/30 flex items-center justify-center text-blue-400 text-sm flex-shrink-0">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h2 class="text-sm font-black uppercase tracking-[0.2em] text-blue-400">Mobile & Software</h2>
+                </div>
+                <div class="category-line"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mb-16">
+
+                <!-- Card 1 — FRP & Desbloqueio -->
+                <div class="service-card blue glass rounded-3xl border border-white/5 p-10 flex flex-col justify-between fade-up delay-2">
+                    <div class="card-accent blue"></div>
+                    <div>
+                        <div class="flex items-start justify-between mb-8">
+                            <div class="icon-wrap w-16 h-16 rounded-2xl bg-blue-600/15 border border-blue-600/20 flex items-center justify-center text-blue-400 text-3xl">
+                                <i class="fa-solid fa-unlock-keyhole"></i>
+                            </div>
+                            <span class="card-number text-blue-600">01</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight">Desbloqueio & FRP</h3>
+                        <p class="text-slate-400 leading-relaxed mb-7 text-[15px]">Remoção de Conta Google (FRP) em qualquer modelo Android, desbloqueio de Rede e IMEI com métodos seguros e certificados.</p>
+                        <ul class="space-y-3 text-[13px] text-slate-400 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-blue-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i></span>
+                                Remoção de Conta Google (FRP) — Samsung, Xiaomi, Huawei
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-blue-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i></span>
+                                Desbloqueio de Rede e IMEI com garantia
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-blue-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i></span>
+                                Recuperação de aparelhos "brickados" e bootloop
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-blue-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i></span>
+                                Flash de ROM personalizada e stock oficial
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border-t border-white/5 pt-6 flex items-center justify-between">
+                        <span class="text-[10px] font-black uppercase tracking-[0.2em] text-blue-500">Especialidade Core</span>
+                        <div class="w-7 h-7 rounded-full bg-blue-600/15 border border-blue-600/20 flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right text-blue-400 text-[10px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 — Reparação Android & iOS -->
+                <div class="service-card teal glass rounded-3xl border border-white/5 p-10 flex flex-col justify-between fade-up delay-3">
+                    <div class="card-accent teal"></div>
+                    <div>
+                        <div class="flex items-start justify-between mb-8">
+                            <div class="icon-wrap w-16 h-16 rounded-2xl bg-teal-600/15 border border-teal-600/20 flex items-center justify-center text-teal-400 text-3xl">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <span class="card-number text-teal-700">02</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight">Reparação Android & iOS</h3>
+                        <p class="text-slate-400 leading-relaxed mb-7 text-[15px]">Diagnóstico completo e reparação de software em smartphones Android e iPhone. Otimização de performance e recuperação avançada de dados apagados.</p>
+                        <ul class="space-y-3 text-[13px] text-slate-400 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-teal-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-teal-400 text-[10px]"></i></span>
+                                Reparação de Software Android e iOS
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-teal-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-teal-400 text-[10px]"></i></span>
+                                Recuperação avançada de dados apagados
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-teal-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-teal-400 text-[10px]"></i></span>
+                                Otimização completa de dispositivos lentos
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-teal-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-teal-400 text-[10px]"></i></span>
+                                Suporte Samsung, Apple, Xiaomi, Huawei, Tecno, Infinix
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border-t border-white/5 pt-6 flex items-center justify-between">
+                        <span class="text-[10px] font-black uppercase tracking-[0.2em] text-teal-500">Software Especializado</span>
+                        <div class="w-7 h-7 rounded-full bg-teal-600/15 border border-teal-600/20 flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right text-teal-400 text-[10px]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── CATEGORIA 2: SEGURANÇA, REDES & CONECTIVIDADE ── -->
+            <div class="category-title fade-up delay-2">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-purple-600/20 border border-purple-600/30 flex items-center justify-center text-purple-400 text-sm flex-shrink-0">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h2 class="text-sm font-black uppercase tracking-[0.2em] text-purple-400">Segurança, Redes & Conectividade</h2>
+                </div>
+                <div class="category-line"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mb-16">
+
+                <!-- Card 3 — CCTV -->
+                <div class="service-card rose glass rounded-3xl border border-white/5 p-10 flex flex-col justify-between fade-up delay-3">
+                    <div class="card-accent rose"></div>
+                    <div>
+                        <div class="flex items-start justify-between mb-8">
+                            <div class="icon-wrap w-16 h-16 rounded-2xl bg-rose-600/15 border border-rose-600/20 flex items-center justify-center text-rose-400 text-3xl">
+                                <i class="fa-solid fa-camera"></i>
+                            </div>
+                            <span class="card-number text-rose-700">03</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight">Videovigilância CCTV</h3>
+                        <p class="text-slate-400 leading-relaxed mb-7 text-[15px]">Instalação profissional de câmeras IP e Analógicas com monitorização remota pelo telemóvel. Proteja a sua casa e empresa 24 horas por dia.</p>
+                        <ul class="space-y-3 text-[13px] text-slate-400 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-rose-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-rose-400 text-[10px]"></i></span>
+                                Câmeras IP e Analógicas (HD / 4K)
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-rose-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-rose-400 text-[10px]"></i></span>
+                                Monitorização remota via smartphone ou tablet
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-rose-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-rose-400 text-[10px]"></i></span>
+                                Instalação para residências, escritórios e armazéns
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-rose-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-rose-400 text-[10px]"></i></span>
+                                Configuração de DVR/NVR e armazenamento em nuvem
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border-t border-white/5 pt-6 flex items-center justify-between">
+                        <span class="text-[10px] font-black uppercase tracking-[0.2em] text-rose-500">Segurança 24/7</span>
+                        <div class="w-7 h-7 rounded-full bg-rose-600/15 border border-rose-600/20 flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right text-rose-400 text-[10px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 — Redes & Conectividade -->
+                <div class="service-card purple glass rounded-3xl border border-white/5 p-10 flex flex-col justify-between fade-up delay-4">
+                    <div class="card-accent purple"></div>
+                    <div>
+                        <div class="flex items-start justify-between mb-8">
+                            <div class="icon-wrap w-16 h-16 rounded-2xl bg-purple-600/15 border border-purple-600/20 flex items-center justify-center text-purple-400 text-3xl">
+                                <i class="fa-solid fa-wifi"></i>
+                            </div>
+                            <span class="card-number text-purple-700">04</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight">Redes & Conectividade</h3>
+                        <p class="text-slate-400 leading-relaxed mb-7 text-[15px]">Configuração profissional de redes Wi-Fi para residências e empresas. Gestão de routers, switches e montagem de antenas parabólicas.</p>
+                        <ul class="space-y-3 text-[13px] text-slate-400 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-purple-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-purple-400 text-[10px]"></i></span>
+                                Redes Wi-Fi residenciais e empresariais (Mesh)
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-purple-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-purple-400 text-[10px]"></i></span>
+                                Gestão técnica de Routers e Switches
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-purple-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-purple-400 text-[10px]"></i></span>
+                                Montagem e alinhamento de antenas parabólicas
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-purple-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-purple-400 text-[10px]"></i></span>
+                                Eliminação de zonas mortas de sinal
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border-t border-white/5 pt-6 flex items-center justify-between">
+                        <span class="text-[10px] font-black uppercase tracking-[0.2em] text-purple-500">Conectividade Total</span>
+                        <div class="w-7 h-7 rounded-full bg-purple-600/15 border border-purple-600/20 flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right text-purple-400 text-[10px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 — Cibersegurança (full width) -->
+                <div class="service-card green glass rounded-3xl border border-white/5 p-10 flex flex-col justify-between fade-up delay-5 md:col-span-2">
+                    <div class="card-accent green"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <div class="flex items-start justify-between mb-8">
+                                <div class="icon-wrap w-16 h-16 rounded-2xl bg-green-600/15 border border-green-600/20 flex items-center justify-center text-green-400 text-3xl">
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                                <span class="card-number text-green-700">05</span>
+                            </div>
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight">Cibersegurança</h3>
+                            <p class="text-slate-400 leading-relaxed text-[15px]">Auditoria de segurança digital para proteger a sua empresa e dados pessoais contra invasões, vírus e ameaças online.</p>
+                        </div>
+                        <ul class="space-y-3 text-[13px] text-slate-400 self-center mt-8 md:mt-0">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-green-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-green-400 text-[10px]"></i></span>
+                                Auditoria completa de segurança digital
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-green-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-green-400 text-[10px]"></i></span>
+                                Proteção contra invasões e ataques externos
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-green-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-green-400 text-[10px]"></i></span>
+                                Configuração de VPN e firewall empresarial
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-green-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-green-400 text-[10px]"></i></span>
+                                Remoção de vírus, malware e ransomware
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border-t border-white/5 pt-6 flex items-center justify-between mt-8">
+                        <span class="text-[10px] font-black uppercase tracking-[0.2em] text-green-500">Protecção Avançada</span>
+                        <div class="w-7 h-7 rounded-full bg-green-600/15 border border-green-600/20 flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right text-green-400 text-[10px]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── CATEGORIA 3: INFORMÁTICA EMPRESARIAL & WEB ── -->
+            <div class="category-title fade-up delay-2">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-teal-600/20 border border-teal-600/30 flex items-center justify-center text-teal-400 text-sm flex-shrink-0">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h2 class="text-sm font-black uppercase tracking-[0.2em] text-teal-400">Informática Empresarial & Web</h2>
+                </div>
+                <div class="category-line"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mb-16">
+
+                <!-- Card 6 — PCs & Laptops -->
+                <div class="service-card teal glass rounded-3xl border border-white/5 p-10 flex flex-col justify-between fade-up delay-3">
+                    <div class="card-accent teal"></div>
+                    <div>
+                        <div class="flex items-start justify-between mb-8">
+                            <div class="icon-wrap w-16 h-16 rounded-2xl bg-teal-600/15 border border-teal-600/20 flex items-center justify-center text-teal-400 text-3xl">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <span class="card-number text-teal-700">06</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight">Reparação de PC & Laptop</h3>
+                        <p class="text-slate-400 leading-relaxed mb-7 text-[15px]">Manutenção especializada de computadores pessoais e portáteis. Instalação de sistemas operativos e softwares profissionais com otimização completa.</p>
+                        <ul class="space-y-3 text-[13px] text-slate-400 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-teal-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-teal-400 text-[10px]"></i></span>
+                                Instalação de Windows, Linux e macOS
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-teal-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-teal-400 text-[10px]"></i></span>
+                                Limpeza física e troca de pasta térmica
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-teal-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-teal-400 text-[10px]"></i></span>
+                                Backup seguro e migração de dados
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-teal-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-teal-400 text-[10px]"></i></span>
+                                Diagnóstico remoto via AnyDesk/TeamViewer
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border-t border-white/5 pt-6 flex items-center justify-between">
+                        <span class="text-[10px] font-black uppercase tracking-[0.2em] text-teal-500">Performance Máxima</span>
+                        <div class="w-7 h-7 rounded-full bg-teal-600/15 border border-teal-600/20 flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right text-teal-400 text-[10px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 — Sites & Presença Digital -->
+                <div class="service-card blue glass rounded-3xl border border-white/5 p-10 flex flex-col justify-between fade-up delay-4">
+                    <div class="card-accent blue"></div>
+                    <div>
+                        <div class="flex items-start justify-between mb-8">
+                            <div class="icon-wrap w-16 h-16 rounded-2xl bg-blue-600/15 border border-blue-600/20 flex items-center justify-center text-blue-400 text-3xl">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <span class="card-number text-blue-600">07</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight">Sites & Presença Digital</h3>
+                        <p class="text-slate-400 leading-relaxed mb-7 text-[15px]">Criação de sites profissionais, gestão de e-mails corporativos e consultoria de marketing digital para crescer online.</p>
+                        <ul class="space-y-3 text-[13px] text-slate-400 mb-8">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-blue-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i></span>
+                                Criação de sites profissionais responsivos
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-blue-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i></span>
+                                Gestão de e-mails corporativos
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-blue-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i></span>
+                                SEO e Google Search Console
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-blue-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-blue-400 text-[10px]"></i></span>
+                                Domínio, alojamento e manutenção contínua
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border-t border-white/5 pt-6 flex items-center justify-between">
+                        <span class="text-[10px] font-black uppercase tracking-[0.2em] text-blue-500">Presença Online</span>
+                        <div class="w-7 h-7 rounded-full bg-blue-600/15 border border-blue-600/20 flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right text-blue-400 text-[10px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 — Consultoria & Automação (full width) -->
+                <div class="service-card amber glass rounded-3xl border border-white/5 p-10 flex flex-col justify-between fade-up delay-5 md:col-span-2">
+                    <div class="card-accent amber"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <div class="flex items-start justify-between mb-8">
+                                <div class="icon-wrap w-16 h-16 rounded-2xl bg-amber-600/15 border border-amber-600/20 flex items-center justify-center text-amber-400 text-3xl">
+                                    <i class="fa-solid fa-code-branch"></i>
+                                </div>
+                                <span class="card-number text-amber-700">08</span>
+                            </div>
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight">Consultoria & Automação</h3>
+                            <p class="text-slate-400 leading-relaxed text-[15px]">Apoio técnico especializado para decisões tecnológicas e scripts de automação para poupar tempo e dinheiro na sua empresa.</p>
+                        </div>
+                        <ul class="space-y-3 text-[13px] text-slate-400 self-center mt-8 md:mt-0">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-amber-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-amber-400 text-[10px]"></i></span>
+                                Consultoria técnica para tomada de decisão
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-amber-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-amber-400 text-[10px]"></i></span>
+                                Automação de backups em cloud
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-amber-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-amber-400 text-[10px]"></i></span>
+                                Diagnóstico remoto especializado
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-amber-600/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-check text-amber-400 text-[10px]"></i></span>
+                                Integração de APIs e soluções empresariais
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border-t border-white/5 pt-6 flex items-center justify-between mt-8">
+                        <span class="text-[10px] font-black uppercase tracking-[0.2em] text-amber-500">Inovação Aplicada</span>
+                        <div class="w-7 h-7 rounded-full bg-amber-600/15 border border-amber-600/20 flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right text-amber-400 text-[10px]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA central -->
+            <div class="mt-8 text-center fade-up delay-5">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-8 mb-12">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-blue-600/15 border border-blue-600/20 flex items-center justify-center text-blue-400">
+                            <i class="fa-solid fa-bolt text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-white font-bold text-sm leading-tight">Resolução em 24h</p>
+                            <p class="text-slate-500 text-xs">Média para FRP e software</p>
+                        </div>
+                    </div>
+                    <div class="hidden sm:block w-px h-8 bg-white/10"></div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-teal-600/15 border border-teal-600/20 flex items-center justify-center text-teal-400">
+                            <i class="fa-solid fa-shield-halved text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-white font-bold text-sm leading-tight">Garantia de Especialista</p>
+                            <p class="text-slate-500 text-xs">Em todos os serviços</p>
+                        </div>
+                    </div>
+                    <div class="hidden sm:block w-px h-8 bg-white/10"></div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-green-600/15 border border-green-600/20 flex items-center justify-center text-green-400">
+                            <i class="fa-solid fa-stethoscope text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-white font-bold text-sm leading-tight">Diagnóstico Gratuito</p>
+                            <p class="text-slate-500 text-xs">Sem compromisso</p>
+                        </div>
+                    </div>
+                    <div class="hidden sm:block w-px h-8 bg-white/10"></div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-purple-600/15 border border-purple-600/20 flex items-center justify-center text-purple-400">
+                            <i class="fa-solid fa-globe text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-white font-bold text-sm leading-tight">Suporte Remoto</p>
+                            <p class="text-slate-500 text-xs">Angola e internacional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/244972445045" class="cta-btn">
+                    <i class="fa-brands fa-whatsapp wa-icon"></i>
+                    Quero um Orçamento Personalizado
+                </a>
+                <p class="text-slate-500 mt-5 text-xs font-semibold uppercase tracking-widest">Diagnóstico gratuito · Segunda a Sábado · 08h – 18h</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 glass border-t border-white/5 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <a href="index.html" class="flex items-center gap-2.5 group">
+                    <div class="w-9 h-9 bg-blue-600/20 rounded-lg border border-blue-500/20 flex items-center justify-center font-bold text-blue-400 text-sm group-hover:bg-blue-600/30 transition">S</div>
+                    <span class="text-base font-bold text-white tracking-tighter">SOFT SOLUÇÕES LDA</span>
+                </a>
+                <div class="flex items-center gap-6 text-xs text-slate-500">
+                    <a href="index.html" class="hover:text-slate-300 transition">Início</a>
+                    <a href="servicos.html" class="hover:text-slate-300 transition">Serviços</a>
+                    <a href="contacto.html" class="hover:text-slate-300 transition">Contacto</a>
+                    <a href="https://www.instagram.com/softsolucoes.lda" target="_blank" rel="noopener" class="hover:text-pink-400 transition">Instagram</a>
+                </div>
+                <p class="text-slate-600 text-[10px] uppercase tracking-[0.25em] font-bold">© 2026 Luanda, Angola</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('open');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(el => {
+                if (el.isIntersecting) el.target.style.animationPlayState = 'running';
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
